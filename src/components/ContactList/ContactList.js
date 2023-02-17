@@ -9,13 +9,13 @@ import {
   DelButton,
 } from './ContactList.styled';
 
-function ContactList({ onRemove, findContact, list }) {
-  console.log(findContact())
+function ContactList({ onRemove, list, findContact }) {
+
   return (
     <ContactsSection>
       <ContTitle>Contacts</ContTitle>
       <ContList>
-        {findContact().map(({ name, number, id }) => (
+        {list.map(({ name, number, id }) => (
           <ContItem key={id}>
             <ContName>{name}: </ContName>
             <ContNum>{number}</ContNum>

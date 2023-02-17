@@ -15,7 +15,7 @@ function FilterContact({ filter, onChange }) {
           name="filter"
           value={filter}
           placeholder="🔎 Enter name for Search"
-          onChange={({ target }) => onChange(target.value)}
+          onChange={onChange}
         />
       </FilterTitle>
     </FilterSection>
